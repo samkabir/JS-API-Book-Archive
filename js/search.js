@@ -7,7 +7,7 @@ const loadBooks = () => {
 
     const searchText = document.getElementById("input-field");
     const searchTextInput = searchText.value;
-    const url = `http://openlibrary.org/search.json?q=${searchTextInput}`;
+    const url = `https://openlibrary.org/search.json?q=${searchTextInput}`;
     searchText.value = "";
     const booksdiv1 = document.getElementById("displayTenBooks");
     booksdiv1.innerHTML = ``;
@@ -18,7 +18,6 @@ const loadBooks = () => {
 }
 
 const displayBooks = books =>{
-    console.log(books);
     const booksdiv = document.getElementById("displayTenBooks");
     const noBooksdiv = document.getElementById("displayNoBooks");
     // noBooksdiv.innerHTML = '';
@@ -45,7 +44,7 @@ const displayBooks = books =>{
         //Display Search Result
         let loopCount = 0;
         books.docs.forEach(book => {
-            if (loopCount < 12){
+            if (loopCount < 18){
                 const div = document.createElement('div');
                 div.classList.add('col-md-4');
                 div.innerHTML=`

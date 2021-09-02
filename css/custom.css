@@ -37,6 +37,6 @@
 
 .bg-image-vertical {
     background-position: top;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: 100%;
   }
