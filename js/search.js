@@ -27,7 +27,7 @@ const displayBooks = books =>{
         const noBooks = document.createElement("div");
         noBooks.classList.add('text-center');
         noBooks.innerHTML = `
-            <h2>No books found. Please try again.</h2>
+            <h2 class="text-white">No books found. Please try again.</h2>
         `;
         noBooksdiv.appendChild(noBooks);
     } else {
@@ -37,7 +37,7 @@ const displayBooks = books =>{
         const divtotal = document.createElement('div');
         divtotal.classList.add('text-center');
         divtotal.innerHTML=`
-            <h5>Showing maximun 12 of the ${books.numFound} books found.</h5>
+            <h5 class="text-white">Showing maximum 12 of the ${books.numFound} books found.</h5>
         `
         totalBooks.appendChild(divtotal);
         
@@ -49,10 +49,10 @@ const displayBooks = books =>{
                 const div = document.createElement('div');
                 div.classList.add('col-md-4');
                 div.innerHTML=`
-                    <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card mb-3 shadow-lg bg-white rounded" style="max-width: 540px; min-height: 300px;">
                         <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-4 align-middle">
+                                <img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="img-fluid rounded-start " alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">

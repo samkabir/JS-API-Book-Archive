@@ -8,21 +8,20 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Custom CSS -->
-    
+    <link rel="stylesheet" href="css/custom.css">
 
 </head>
-<body>
+<body class="bg-image-vertical" style="background-color: #EFD3E4; background-image: url(img/bg.jpg);">
     <main class="container">
         <!-- Search Bar -->
         <section class="w-50 mx-auto p-4">
             <div class="m-5">
-                <h2>Discover Amazing Books!</h2>
+                <h2 class="text-white fw-bold">Discover Amazing Books!</h2>
             </div>
-            <div class="input-group">
+            <div class="input-group searchbar rounded">
                 <input id="input-field" type="search" class="form-control rounded m-1" placeholder="Search Books" aria-label="Search" aria-describedby="search-addon" />
-                <button onclick="loadBooks()" type="button" class="btn btn-outline-secondary rounded btn-lg m-1">Search</button>
+                <button onclick="loadBooks()" type="button" class="button btn btn-primary btn-lg rounded m-1">Search</button>
             </div>
-            <p>Histoires de la Fin des Temps(La grande anthologie de la Science-Fiction)</p>
         </section>
         <div id="displayNumberOfBooks">
 
@@ -37,9 +36,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        
-    </footer>
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <!-- Custom JavaScript -->

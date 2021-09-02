@@ -1,0 +1,42 @@
+.button{
+    color: black !important;
+}
+.btn-primary, .btn-primary:active{
+    background-color: rgb(177, 64, 177);
+    border-color: rgb(73, 4, 73);
+}
+.btn{
+    font-weight: 500;
+}
+.btn-primary:focus{
+    background-color: rgb(110, 47, 110);
+    border-color: rgb(73, 4, 73);
+    box-shadow: 0 0 0 0.25rem rgb(110 47 110 / 50%);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgb(110, 47, 110);
+    border-color: rgb(110, 47, 110);
+    box-shadow: 0 0 0 0.25rem rgb(110 47 110 / 25%);
+}
+
+.form-control:focus {
+    color: rgb(110, 47, 110);
+    background-color: #fff;
+    border-color: rgb(110, 47, 110);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(110 47 110 / 25%);
+}
+.searchbar{
+    background-color:#fff;
+    margin: 10px;
+}
+.img-fluid{
+    padding-top: 50px;
+}
+
+.bg-image-vertical {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
