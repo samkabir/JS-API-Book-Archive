@@ -18,6 +18,7 @@ const loadBooks = () => {
 }
 
 const displayBooks = books =>{
+    console.log(books);
     const booksdiv = document.getElementById("displayTenBooks");
     const noBooksdiv = document.getElementById("displayNoBooks");
     // noBooksdiv.innerHTML = '';
@@ -56,9 +57,9 @@ const displayBooks = books =>{
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">${book.title}</h5>
-                                    <p class="card-text">Author: ${book.author_name[0]}</p>
-                                    <p class="card-text">Publisher: ${book.publisher[0]}</p>
-                                    <p class="card-text">First Published: ${book.publish_date[0]}</p>
+                                    <p class="card-text">Author: ${book.author_name ? book.author_name[0] : ''}</p>
+                                    <p class="card-text">Publisher: ${book.publisher ? book.publisher[0] : ''}</p>
+                                    <p class="card-text">First Published: ${book.publish_date ? book.publish_date[0] : ''}</p>
                                 </div>
                             </div>
                         </div>
