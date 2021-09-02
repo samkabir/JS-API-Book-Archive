@@ -37,7 +37,7 @@ const displayBooks = books =>{
         const divtotal = document.createElement('div');
         divtotal.classList.add('text-center');
         divtotal.innerHTML=`
-            <h5 class="text-white">Showing maximum 12 of the ${books.numFound} books found.</h5>
+            <h5 class="text-white">Showing maximum 18 of the ${books.numFound} books found.</h5>
         `
         totalBooks.appendChild(divtotal);
         
