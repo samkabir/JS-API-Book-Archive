@@ -49,13 +49,13 @@ const displayBooks = books =>{
                 const div = document.createElement('div');
                 div.classList.add('col-md-4');
                 div.innerHTML=`
-                    <div class="card mb-3 shadow-lg bg-white rounded" style="max-width: 540px; min-height: 300px;">
+                    <div class="card ps-3 mb-3 shadow-lg bg-white rounded" style="max-width: 540px; min-height: 300px;">
                         <div class="row g-0">
                             <div class="col-md-4 align-middle">
                                 <img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="img-fluid rounded-start " alt="...">
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body">
+                                <div class="card-body pt-4">
                                     <h5 class="card-title">${book.title}</h5>
                                     <p class="card-text">Author: ${book.author_name ? book.author_name[0] : ''}</p>
                                     <p class="card-text">Publisher: ${book.publisher ? book.publisher[0] : ''}</p>
